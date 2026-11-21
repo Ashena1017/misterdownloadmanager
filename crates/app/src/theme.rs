@@ -342,6 +342,7 @@ fn script_probe(key: &str) -> Option<(&'static str, &'static str)> {
 }
 
 /// Whether face `index` of `bytes` has a glyph for every character of `text`.
+#[cfg_attr(not(any(windows, target_os = "macos")), allow(dead_code))]
 fn covers(bytes: &[u8], index: u32, text: &str) -> bool {
     use skrifa::MetadataProvider as _;
     skrifa::FontRef::from_index(bytes, index).is_ok_and(|font| {
@@ -697,6 +698,8 @@ struct ScriptFallback {
 /// One script's fonts on demand: a key, its code points, the files to try (in order).
 #[cfg_attr(not(any(windows, target_os = "macos")), allow(dead_code))]
 struct FallbackFont {
+    /// Read on Windows (the Han list, [`fallback_files`]) and by the tests.
+    #[cfg_attr(not(windows), allow(dead_code))]
     key: &'static str,
     ranges: &'static [(u32, u32)],
     files: &'static [&'static str],
