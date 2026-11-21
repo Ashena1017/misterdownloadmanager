@@ -569,6 +569,11 @@ Bug fixes from the first days of 0.5.0, a Safari extension, and more file types.
 
 These ship in the next version.
 
+- ✅ Windows: Simplified Chinese drawn with a Chinese font on every Windows, no longer as boxes
+  where Microsoft YaHei's usual file is missing (Windows 7's `msyh.ttf`, DengXian, SimSun and
+  SimHei are looked for too, a Chinese font must have its language's own characters, the Chinese
+  fonts come before the Japanese ones for every Chinese character, a font per character), and
+  the log names the font ([#1605](https://github.com/anefzaoui/misterdownloadmanager/issues/1605))
 - ✅ YouTube's JavaScript runtime: MDM installs Node.js (its newest LTS, from nodejs.org, its
   checksum list checked against Node.js's releasers' signing keys) instead of Deno, for Windows
   (x64, ARM64, 32-bit), macOS and Linux (x64, ARM64), kept up to date with the other helpers; a
