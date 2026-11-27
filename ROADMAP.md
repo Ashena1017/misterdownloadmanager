@@ -569,6 +569,10 @@ Bug fixes from the first days of 0.5.0, a Safari extension, and more file types.
 
 Everything below ships together, in version 0.6.0, the next release.
 
+- ✅ A download's progress window can start minimized: **Options → Downloads → Customize
+  "Download progress" dialog → Edit...** offers **Show normally**, **Show minimized** and
+  **Don't show** ([#1966](https://github.com/anefzaoui/misterdownloadmanager/issues/1966); thanks to
+  [@Raghav2012Code](https://github.com/Raghav2012Code))
 - ✅ Import: an `.ef2` list's `filename:` lines name its downloads (only a file name: folder parts
   are left out), shown in Link grabber before they are added
   ([#1963](https://github.com/anefzaoui/misterdownloadmanager/issues/1963); thanks to
