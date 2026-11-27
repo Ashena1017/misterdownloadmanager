@@ -2259,6 +2259,10 @@ Everything below ships together, in version 0.6.0, the next release.
 - ✅ Tests: the download checks on 32-bit Windows no longer stop halfway now and then: the
   largest test downloads (up to 1 GiB) are compared with what they should hold a piece at a
   time, instead of both whole in memory at once, which a 32-bit test program couldn't always fit
+- ✅ Torrents: turning DHT off in Torrent settings now really keeps it off, also when MDM is
+  started for a magnet link or a .torrent file, and for the command line's `torrent-info` and
+  `torrent-get`; the other Torrent settings switches and the network adapter apply from the
+  first moment too
 - ✅ A screen reader says a download's size with one space before the unit ("1.00 MB"): the
   Size column's padding for its looks ("1.00  MB", as IDM writes it) was read aloud, extra
   space and all, both in the size cell and in the status of a download with no known total
