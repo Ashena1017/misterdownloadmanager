@@ -569,6 +569,10 @@ Bug fixes from the first days of 0.5.0, a Safari extension, and more file types.
 
 Everything below ships together, in version 0.6.0, the next release.
 
+- ✅ Website FAQ: why installing yt-dlp or another helper times out where GitHub can't be reached, and what to do
+  (a proxy in Options → Proxy / Socks, or Helpers → Use another program)
+  ([#1926](https://github.com/anefzaoui/misterdownloadmanager/issues/1926); thanks to
+  [@HandSome507](https://github.com/HandSome507))
 - ✅ Site rules give a site a proxy: **No proxy** (straight to the site) or one of its own
   (`host:port`, `socks5://…`) with its login, kept with MDM's other passwords; a download's own
   proxy first, then the first rule that names the site and sets one, then Options. Video and
