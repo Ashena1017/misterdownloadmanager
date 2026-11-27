@@ -2251,6 +2251,11 @@ Everything below ships together, in version 0.6.0, the next release.
 - ✅ Tests: the download checks on 32-bit Windows no longer stop halfway now and then: the
   largest test downloads (up to 1 GiB) are compared with what they should hold a piece at a
   time, instead of both whole in memory at once, which a 32-bit test program couldn't always fit
+- ✅ Tests: the check that a torrent added again keeps showing what it had no longer fails now
+  and then on a slow computer: it counted how often it had looked, which the computer's pace
+  decides; it now holds the re-add half-way, the torrent out of the session, until its numbers
+  were read there, which a fast computer hardly ever did
+  ([#2002](https://github.com/anefzaoui/misterdownloadmanager/issues/2002))
 
 ## Being worked on
 
