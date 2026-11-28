@@ -569,6 +569,12 @@ Bug fixes from the first days of 0.5.0, a Safari extension, and more file types.
 
 Everything below ships together, in version 0.6.0, the next release.
 
+- ✅ Windows without a graphics card's driver (Windows Server, a virtual machine, Remote Desktop):
+  MDM offers once to download Mesa's software renderer (llvmpipe), with its size, and from
+  **View → Draw with**; nothing downloads without a click. Checked against MDM's signed list, it
+  draws from the next start before Windows' own software renderer (WARP), which keeps the
+  processor far busier; one that can't draw there is remembered, and WARP draws again
+  ([#476](https://github.com/anefzaoui/misterdownloadmanager/issues/476))
 - ✅ Browser integration on Windows reads the registry as the browsers do, its 32-bit part first: an older entry
   there that leads nowhere no longer hides MDM's from Edge, Test browser integration says when one is in the way,
   and MDM's start and its setup for everyone fix it
