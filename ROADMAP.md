@@ -569,6 +569,11 @@ Bug fixes from the first days of 0.5.0, a Safari extension, and more file types.
 
 Everything below ships together, in version 0.6.0, the next release.
 
+- ✅ Website: live counters under the home page's contributors, the downloads from GitHub (every
+  file of every release) and the browser add-on's users (the Chrome Web Store and Firefox Add-ons), on
+  split-flap tiles that flip up from zero when the page opens; read at most every 15 minutes, the
+  build's figures when they can't be; the site's download figure is now GitHub's real count of every
+  file of every release, read at every build
 - ✅ Windows without a graphics card's driver (Windows Server, a virtual machine, Remote Desktop):
   MDM offers once to download Mesa's software renderer (llvmpipe), with its size, and from
   **View → Draw with**; nothing downloads without a click. Checked against MDM's signed list, it
